@@ -11,4 +11,33 @@
         tools:listitem="@layout/item_unsplash_photo"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:visibility="visible"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_retry"
+        android:text="Result could not be loaded"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/button_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retry"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:visibility="visible"
+        />
+
+
+
 </RelativeLayout>
